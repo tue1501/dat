@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đặt Phòng</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Hotel Luxury</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="about.html">Giới thiệu</a></li>
+        <li><a href="gallery.html">Hình ảnh</a></li>
+        <li><a href="booking.html">Đặt phòng</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form class="booking-form">
+      <h2>Đặt Phòng</h2>
+      <label for="name">Họ và tên:</label>
+      <input type="text" id="name" name="name" placeholder="Nhập họ và tên" required>
+      
+      <label for="phone">Số điện thoại:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Nhập email" required>
+      
+      <label for="date">Ngày nhận phòng:</label>
+      <input type="date" id="date" name="date" required>
+      
+      <label for="room">Loại phòng:</label>
+      <select id="room" name="room" required>
+        <option value="standard">Standard</option>
+        <option value="deluxe">Deluxe</option>
+        <option value="suite">Suite</option>
+      </select>
+      
+      <button type="submit">Đặt ngay</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Hotel Luxury. All rights reserved.</p>
+  </footer>
+</body>
+</html>
