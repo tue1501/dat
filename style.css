@@ -1,0 +1,270 @@
+/* Reset mặc định */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Thiết lập nền và phông chữ */
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Chiều cao tối thiểu toàn trang */
+}
+
+/* Header */
+header {
+  background: linear-gradient(90deg, #FF5733, #FFC300);
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #900C3F;
+}
+
+/* Nội dung trang chủ */
+.home {
+  background-image: url('hotel-bg.jpg'); /* Đặt hình nền khách sạn */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.home h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.home p {
+  font-size: 1.5em;
+  margin-bottom: 40px;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.home button {
+  background: #FF5733;
+  color: white;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.home button:hover {
+  background: #900C3F;
+}
+
+/* Phần thông tin khách sạn */
+.info {
+  padding: 40px 20px;
+  background: white;
+  text-align: center;
+}
+
+.info h2 {
+  font-size: 2.5em;
+  color: #FF5733;
+  margin-bottom: 20px;
+}
+
+.info p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.info .features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.info .features .feature {
+  width: 30%;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+}
+
+.info .features .feature h3 {
+  font-size: 1.5em;
+  color: #FF5733;
+  margin-bottom: 10px;
+}
+
+.info .features .feature p {
+  font-size: 1em;
+  color: #555;
+}
+
+/* Form đặt phòng */
+form.booking-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form.booking-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #FF5733;
+}
+
+form.booking-form label {
+  font-weight: bold;
+  margin-top: 15px;
+  display: block;
+}
+
+form.booking-form input,
+form.booking-form select,
+form.booking-form button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+form.booking-form button {
+  background: #FF5733;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form.booking-form button:hover {
+  background: #900C3F;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+  margin-top: auto;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+/* Đăng nhập (Login) */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Chiều cao toàn màn hình */
+  background: linear-gradient(90deg, #FF5733, #FFC300);
+}
+
+.login-box {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.login-box h2 {
+  font-size: 2em;
+  color: #FF5733;
+  margin-bottom: 20px;
+}
+
+.login-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-box input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.login-box input:focus {
+  outline: none;
+  border-color: #FF5733;
+}
+
+.login-box button {
+  background: #FF5733;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-box button:hover {
+  background: #900C3F;
+}
+
+.login-box p {
+  font-size: 14px;
+  margin-top: 15px;
+  color: #555;
+}
+
+.login-box p a {
+  color: #FF5733;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-box p a:hover {
+  color: #900C3F;
+}

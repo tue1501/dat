@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng Nhập</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Hotel Luxury</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="about.html">Giới thiệu</a></li>
+        <li><a href="gallery.html">Hình ảnh</a></li>
+        <li><a href="booking.html">Đặt phòng</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="login-container">
+    <div class="login-box">
+      <h2>Đăng Nhập</h2>
+      <form id="loginForm">
+        <input type="text" id="username" name="username" placeholder="Tên đăng nhập hoặc Email" required>
+        <input type="password" id="password" name="password" placeholder="Mật khẩu" required>
+        <button type="submit">Đăng Nhập</button>
+      </form>
+      <p id="error-message" style="color: red; margin-top: 10px; display: none;">Tên đăng nhập hoặc mật khẩu không đúng.</p>
+      <p>Chưa có tài khoản? <a href="register.html">Đăng ký ngay</a></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Hotel Luxury. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Thêm xử lý form đăng nhập
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Ngăn form gửi dữ liệu lên server
+
+      // Lấy giá trị từ input
+      const username = document.getElementById('username').value.trim();
+      const password = document.getElementById('password').value.trim();
+
+      // Kiểm tra username và password
+      if (username === 'admin' && password === '123') {
+        // Chuyển hướng sang trang dashboard
+        alert('Đăng nhập thành công!');
+        window.location.href = 'index.html';
+      } else {
+        // Hiển thị thông báo lỗi
+        const errorMessage = document.getElementById('error-message');
+        errorMessage.style.display = 'block';
+      }
+    });
+  </script>
+</body>
+</html>
